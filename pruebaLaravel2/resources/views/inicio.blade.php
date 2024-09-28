@@ -10,12 +10,12 @@
 
 <body>
     <div class="position-absolute top-50 start-50 translate-middle">
-        <h1 class="display-2">Bienvenido querido Turista!</h1>
+        <h1 class="display-2" >Bienvenido querido Turista!</h1>
         <div class="d-flex justify-content-center">
-            <p>Presiona el botón para iniciar</p>
+        <p >Presiona el botón para iniciar</p>
         </div>
         <div class="d-flex justify-content-center">
-            <a  href="{{route('rutaformulario') }}" class="btn btn-primary">Ir al registro</a>
+        <button class="btn btn-primary ">Comencemos!!</button>
         </div>
     </div>
 </body>
