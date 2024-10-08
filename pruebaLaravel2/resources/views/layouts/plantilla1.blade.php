@@ -6,7 +6,7 @@
     <title>@yield('titulo')</title>
     @vite(['resources/js/app.js'])
 </head>
-<body>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
