@@ -11,6 +11,9 @@ Route :: get('/formulario', [vistas::class, 'formulario']) -> name ('rutaformula
 Route :: get('/clientes', [vistas::class, 'consulta']) -> name ('rutaclientes');
 
 
+// Error 419 es por que funciona bien la seguridad de laravel, pero no se ha configurado el formulario para que funcione con laravel
+
+Route :: post('/enviar', [vistas::class, 'procesarCliente']) -> name ('procesar');
 // Route::get('/', function () {
 //     return view('welcome');
 // });
