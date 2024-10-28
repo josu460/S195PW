@@ -21,7 +21,7 @@
         <div class="position-absolute top-50 start-50 translate-middle">
 
 
-            <input type="number" class="form-control" name="cantidad" placeholder="Cantidad a convertir" aria-label="cantidad" required>
+            <input type="float" class="form-control" name="cantidad" placeholder="Cantidad a convertir" aria-label="cantidad" required>
             <br>
             <div class="input-group">
                 <select class="form-select" name="primera_unidad" aria-label="primera_unidad" required>

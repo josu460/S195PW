@@ -23,18 +23,17 @@ class vistas extends Controller
 
     public function procesarCliente(Request $peticion)
     {
-        // return "llego el formulario al controlador";
 
-        // el all funciona para que te regrese todo dentro de la peticion 
-        return $peticion->all();
+            $validacion = $peticion->validate([
+                'txtnombre' => 'required|min:3|max:255',
+                'txtapellido' => 'required|min:3|max:255',
+                'txtcorreo' => 'required|email:rfc,dns',
+                'txttelefono' => 'required|min:3|max:255'
+            ]);
 
-        //    el path funciona para ver de que ruta se esta enviando la peticion
-        //return $peticion->path();
+            $usuario = $peticion -> input('txtnombre');
+            session()->flash ('exito','Se guardo el usuario :' . $usuario);
+        return to_route('rutaformulario');
 
-        // para ver la url de donde se esta enviando la peticion
-        //return $peticion->url();
-
-        //para ver la ip de la que se mando 
-        //return  $peticion->ip();
     }
 }

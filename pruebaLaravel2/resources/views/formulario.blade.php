@@ -1,9 +1,28 @@
 @extends('layouts.plantilla1')
-    @section('titulo','Formulario Clientes')
-    @section('contenido')
+@section('titulo','Formulario Clientes')
+@section('contenido')
 
-    <div class="container mt-5 col-md-6">
+<div class="container mt-5 col-md-6">
     <div class="card text-center">
+
+        {{-- Valida si existe la clase sesión y ejecuta el if, dos formas diferentes: --}}
+        <!-- @if (session('exito'))
+        <x-Alert tipo="success">{{ session('exito') }}</x-Alert>
+        @endif
+
+        @session ('exito')
+        <x-Alert tipo="danger">{{ $value }}</x-Alert>
+        @endsession -->
+
+        @session ('exito')
+        <script>
+            Swal.fire({
+                title: "Respuesta del servidor",
+                text: "Se guardó el usuario: {{$value}}",
+                icon: "success"
+            });
+        </script>
+        @endsession
 
         <div class="card-header">
             Registro de clientes
@@ -11,8 +30,8 @@
 
         <div class="card-body text-justify">
             <form action="/enviar" method="POST">
-            <!-- este es para que genere el token     -->
-            @csrf
+                <!-- este es para que genere el token     -->
+                @csrf
 
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre: </label>
@@ -38,6 +57,5 @@
         </div>
 
     </div>
-    </div>
-    @endsection
-    
+</div>
+@endsection

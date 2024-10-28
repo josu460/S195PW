@@ -15,7 +15,7 @@
 
     <div class="position-absolute top-50 start-50 translate-middle ">
         <center>
-            <h1>Josué Adrián Rivera Cruz</h1>
+            <h1 class="mt-4">Josué Adrián Rivera Cruz</h1>
             <h2 class="mt-4">Repaso 1 Laravel </h2>
             <h2 class="mt-4">S-195</h2>
             <h2 class="mt-4">18/10/2024</h2>
