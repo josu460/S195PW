@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('rutainicio')}}">TURISTA SIN MAPS</a>
+            <a class="navbar-brand" href="{{ route('rutainicio')}}">{{ __('Turista sin Maps') }}</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -19,11 +19,11 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <!-- esta es una peticion para indicar que si esta en la ruta inicio se ponga de color amarillo -->
-                        <a class="nav-link active {{ request()->routeIs('rutaformulario')?'text-warning':''}}" aria-current="page" href="{{route('rutaformulario')}}">Registro de clientes</a>
+                        <a class="nav-link active {{ request()->routeIs('rutaformulario')?'text-warning':''}}" aria-current="page" href="{{route('rutaformulario')}}">{{ __('Registro Clientes') }}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active {{ request()->routeIs('rutaclientes')?'text-danger':''}}" aria-current="page" href="{{route('rutaclientes')}}">Consultar Clientes</a>
+                        <a class="nav-link active {{ request()->routeIs('rutaclientes')?'text-danger':''}}" aria-current="page" href="{{route('rutaclientes')}}">{{ __('Consultar Clientes') }}</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">

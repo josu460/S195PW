@@ -25,7 +25,8 @@
         @endsession
 
         <div class="card-header">
-            Registro de clientes
+            
+            {{ __('Registro de clientes') }}
         </div>
 
         <div class="card-body text-justify">
@@ -34,25 +35,29 @@
                 @csrf
 
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre: </label>
-                    <input type="text" class="form-control" name="txtnombre">
+                    <label for="nombre" class="form-label">{{ __('Nombre:') }}</label>
+                    <input type="text" class="form-control" name="txtnombre" id="txtnombre">
+                    <small>{{$errors->first('txtnombre')}}</small>
                 </div>
                 <div class="mb-3">
-                    <label for="apellido" class="form-label">Apellido: </label>
-                    <input type="text" class="form-control" name="txtapellido">
+                    <label for="apellido" class="form-label">{{ __('Apellido:') }}</label>
+                    <input type="text" class="form-control" name="txtapellido" id="txtapellido">
+                    <small>{{$errors->first('txtapellido')}}</small>
                 </div>
                 <div class="mb-3">
-                    <label for="correo" class="form-label">Correo: </label>
-                    <input type="email" class="form-control" name="txtcorreo">
+                    <label for="correo" class="form-label">{{ __('Correo:') }}</label>
+                    <input type="email" class="form-control" name="txtcorreo" id="txtcorreo">
+                    <small>{{$errors->first('txtcorreo')}}</small>
                 </div>
                 <div class="mb-3">
-                    <label for="numero" class="form-label">Telefono: </label>
-                    <input type="number" class="form-control" name="txttelefono">
+                    <label for="numero" class="form-label">{{ __('Telefono:') }}</label>
+                    <input type="number" class="form-control" name="txttelefono" id="txttelefono">
+                    <small>{{$errors->first('txttelefono')}}</small>
                 </div>
         </div>
 
         <div class="card-footer text-body-secondary">
-            <button class="btn btn-success" type="submit">Guardar</button>
+            <button class="btn btn-success" type="submit">{{ __('Guardar Cliente') }}</button>
             </form>
         </div>
 
