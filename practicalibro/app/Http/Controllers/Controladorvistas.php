@@ -13,4 +13,8 @@ class Controladorvistas extends Controller
     public function navbar(){
         return view('navbar');
     }
+
+    public function formulario(){
+        return view('formulario');
+    }
 }

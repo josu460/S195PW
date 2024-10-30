@@ -1,8 +1,35 @@
-.titulo{
+.titulo {
     font-size: 50px;
     font-weight: bold;
     color: #eaff00;
     text-align: center;
     margin-top: 30px;
     text-shadow: #000 2px 2px 2px;
+}
+
+.containernoticia {
+    margin: 55px auto 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    width: 65%;
+    height: auto;
+}
+
+.img-han{
+    width: 65%;
+    height: auto;
+    border-radius: 10px;
+}
+.text-body-footer{
+    font-size: 20px;
+    font-weight: bold;
+    color: #eaff00;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: #000 2px 2px 2px;
+}
+
+.copy {
+    color: white;
 }
