@@ -5,6 +5,21 @@
 <h1 class="titulo">Registro de libro</h1>
 
 <div class="container-md">
+    @if (session('exito'))
+        <x-Alert tipo="success">{{ session('exito') }}</x-Alert>
+        @endif
+
+@if (session('exito'))
+        @session ('exito')
+        <script>
+            Swal.fire({
+                title: "Todo correcto ",
+                text: " {{$value}} guardado",
+                icon: "success"
+            });
+        </script>
+        @endsession
+    @endif
     <form action="/enviardatos" method="POST">
         @csrf
         <div class="mb-3">

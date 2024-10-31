@@ -7,14 +7,19 @@
     <title>@yield('titulo')</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="{{ asset('css/principal.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
     @vite(['resources/js/app.js'])
 </head>
 
 <body>
 
-    <nav  class="navbar bg-primary" data-bs-theme="dark">
+    <nav class="navbar bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('inicio')}}"><strong>  Los Tres Cerditos</strong> </a>
+            <a class="navbar-brand" href="{{ route('inicio')}}"><strong> Los Tres Cerditos</strong> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,7 +29,7 @@
                         <a class="nav-link active" aria-current="page" href="{{ route('inicio')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active"  aria-current="page" href="{{ route('formulario')}}">Registro de libro</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('formulario')}}">Registro de libro</a>
                     </li>
                 </ul>
             </div>
