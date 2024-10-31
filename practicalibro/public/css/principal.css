@@ -33,3 +33,15 @@
 .copy {
     color: white;
 }
+.bg-body-tertiary{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.form-label{
+    font-size: 20px;
+    font-weight: bold;
+    color: #eaff00;
+    text-shadow: #000 2px 2px 2px;
+}
