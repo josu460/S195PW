@@ -19,17 +19,17 @@
 
     <nav class="navbar bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('inicio')}}"><strong> Los Tres Cerditos</strong> </a>
+            <a class="navbar-brand" href="{{ route('inicio')}}"><strong>{{ __('Los Tres Cerditos') }} </strong> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('inicio')}}">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('inicio')}}">{{ __('Casa') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('formulario')}}">Registro de libro</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('formulario')}}">{{ __('Registro de libro') }}</a>
                     </li>
                 </ul>
             </div>
