@@ -5,9 +5,7 @@
 <h1 class="titulo">{{ __('Registro de libro') }}</h1>
 
 <div class="container-md">
-    @if (session('exito'))
-        <x-Alert tipo="success">{{ session('exito') }}</x-Alert>
-        @endif
+
 
 @if (session('exito'))
         @session ('exito')
