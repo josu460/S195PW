@@ -5,17 +5,19 @@
     @section('contenido')
     <!-- y aqui es para que nos agarre el contenido de esta vista -->
 
+<!-- esto es para que se traigo los datos de la base de datos -->
 
-    <div class="container mt-5 col-md-8">
+<div class="container mt-5 col-md-8">
+    @foreach ($consultaClientes as $clientes)
         <div class="card text-justify font-monospace">
 
             <div class="card-header fs-5 text-primary">
-                Josué Adrián Rivera Cruz
+                {{$clientes->nombre}}
             </div>
 
             <div class="card-body">
-                <h5 class="fw-bold">josue.rivera@gmail.com</h5>
-                <h5 class="fw-medium">4427474799</h5>
+                <h5 class="fw-bold">{{$clientes->correo}}</h5>
+                <h5 class="fw-medium">{{$clientes->telefono}}</h5>
                 <p class="card-text fw-lighter"></p>
             </div>
             <div class="card-footer text-muted">
@@ -24,6 +26,10 @@
             </div>
 
         </div>
-    </div>
+    @endforeach
+</div>
+
+
+ 
     @endsection
     <!-- aqui cerramos la seccion -->

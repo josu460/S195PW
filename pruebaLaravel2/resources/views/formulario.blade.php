@@ -30,7 +30,7 @@
         </div>
 
         <div class="card-body text-justify">
-            <form action="/enviar" method="POST">
+            <form action="{{ route('procesar')}}" method="POST">
                 <!-- este es para que genere el token     -->
                 @csrf
 
