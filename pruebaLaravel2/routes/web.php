@@ -13,6 +13,8 @@ Route :: get('/', [vistas::class, 'home']) -> name ('rutainicio');
 Route::get('/clientes', [clienteController::class, 'index'])->name('rutaclientes');
 Route::get('/clientes/create', [clienteController::class, 'create'])->name('rutaformulario');
 Route::post('/clientes', [clienteController::class, 'store'])->name('procesar');
+Route::put('/clientes/{id}', [clienteController::class, 'update'])->name('actualizar');
+Route::delete('/clientes/{id}', [clienteController::class, 'destroy'])->name('eliminar');
 
 
 // Error 419 es por que funciona bien la seguridad de laravel, pero no se ha configurado el formulario para que funcione con laravel
