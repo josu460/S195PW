@@ -5,7 +5,7 @@
 @section('contenido')
 <!-- y aqui es para que nos agarre el contenido de esta vista -->
 
-<!-- esto es para que se traigo los datos de la base de datos -->
+<!-- esto es para que se traigan los datos de la base de datos -->
 
 <div class="container mt-5 col-md-8">
     @foreach ($consultaClientes as $clientes)
@@ -115,7 +115,7 @@
                                 @session ('Eliminar')
                                     <script>
                                         Swal.fire({
-                                            title: "Deleted!",
+                                            title: "Eliminado!",
                                             text: "Usuario eliminado exitosamente", 
                                             icon: "success"
                                         });
