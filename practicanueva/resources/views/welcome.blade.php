@@ -15,7 +15,7 @@
             <p>Presiona el botón para iniciar</p>
         </div>
         <div class="d-flex justify-content-center">
-            <a  href="{{route('rutaformulario') }}" class="btn btn-primary">Ir al registro</a>
+            <a  href="{{route('cliente.create') }}" class="btn btn-primary">Ir al registro</a>
         </div>
     </div>
 </body>

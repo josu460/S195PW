@@ -10,13 +10,13 @@ class vistas extends Controller
     {
         return view('welcome');
     }
-    public function formulario()
-    {
-        return view('formulario');
-    }
+    // public function formulario()
+    // {
+    //     return view('formulario');
+    // }
 
-    public function consulta()
-    {
-        return view('clientes');
-    }
+    // public function consulta()
+    // {
+    //     return view('clientes');
+    // }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('titulo')</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     @vite(['resources/js/app.js'])
 </head>
 
@@ -19,11 +20,11 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <!-- esta es una peticion para indicar que si esta en la ruta inicio se ponga de color amarillo -->
-                        <a class="nav-link active {{ request()->routeIs('rutaformulario')?'text-warning':''}}" aria-current="page" href="{{route('rutaformulario')}}">{{ __('Registro Clientes') }}</a>
+                        <a class="nav-link active {{ request()->routeIs('cliente.create')?'text-warning':''}}" aria-current="page" href="{{route('cliente.create')}}">{{ __('Registro Clientes') }}</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active {{ request()->routeIs('rutaclientes')?'text-danger':''}}" aria-current="page" href="{{route('rutaclientes')}}">{{ __('Consultar Clientes') }}</a>
+                        <a class="nav-link active {{ request()->routeIs('cliente.index')?'text-danger':''}}" aria-current="page" href="{{route('cliente.index')}}">{{ __('Consultar Clientes') }}</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
